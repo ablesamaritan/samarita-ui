@@ -70,6 +70,8 @@ class ContactUs extends React.Component {
                 <a
                   className=""
                   href="https://www.facebook.com/able.samaritan.1"
+                  without
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <small className="text-muted">Facebook</small>
@@ -77,7 +79,13 @@ class ContactUs extends React.Component {
               </h5>
               <h5>
                 Twitter:{" "}
-                <a className="" href="#!" target="_blank">
+                <a
+                  className=""
+                  href="#!"
+                  without
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <small className="text-muted">Twitter</small>
                 </a>
               </h5>
@@ -87,6 +95,8 @@ class ContactUs extends React.Component {
                 <a
                   className=""
                   href="https://www.instagram.com/samaritanable/"
+                  without
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <small className="text-muted">Instagram</small>

@@ -4,7 +4,7 @@ import "./styles.scss";
 
 class NonMonetary extends React.Component {
   render() {
-    const { donation } = this.props;
+    // const { donation } = this.props;
     return (
       <Fragment>
         <div className="container padded-container">

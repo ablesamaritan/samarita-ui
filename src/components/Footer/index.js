@@ -30,14 +30,14 @@ class Footer extends React.Component {
                     style={{ cursor: "pointer" }}
                     onClick={() => history.push("/donations/list")}
                   >
-                    <a className="footer-nav-link">Monetary</a>
+                    <p className="footer-nav-link">Monetary</p>
                   </li>
                   <li
                     className="nav-item"
                     style={{ cursor: "pointer" }}
                     onClick={() => history.push("/donations/non-monetary")}
                   >
-                    <a className="footer-nav-link">Non-Monetary</a>
+                    <p className="footer-nav-link">Non-Monetary</p>
                   </li>
                 </ul>
               </div>
@@ -49,13 +49,19 @@ class Footer extends React.Component {
                     <a
                       className="footer-nav-link"
                       href="https://www.facebook.com/able.samaritan.1"
+                      rel="noreferrer"
                       target="_blank"
                     >
                       <i class="fa fa-facebook social-icon" />
                     </a>
                   </li>
                   <li>
-                    <a className="footer-nav-link" href="#!" target="_blank">
+                    <a
+                      className="footer-nav-link"
+                      href="#!"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
                       <i class="fa fa-twitter social-icon" />
                     </a>
                   </li>
@@ -63,6 +69,7 @@ class Footer extends React.Component {
                     <a
                       className="footer-nav-link"
                       href="https://www.instagram.com/samaritanable/"
+                      rel="noreferrer"
                       target="_blank"
                     >
                       <i class="fa fa-instagram social-icon" />

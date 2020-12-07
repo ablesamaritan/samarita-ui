@@ -1,5 +1,6 @@
 import { DEFAULT_ERROR_MESSAGE } from "../actions/types";
 
+// eslint-disable-next-line
 export default (state, action) => {
   if (!action.error) {
     return {

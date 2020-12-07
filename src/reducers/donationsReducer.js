@@ -3,6 +3,7 @@ import _ from "lodash";
 import * as actionTypes from "../actions/types";
 import errors from "./errorsReducer";
 
+// eslint-disable-next-line
 export default (state = {}, action) => {
   switch (action.type) {
     case actionTypes.GET_DONATIONS:

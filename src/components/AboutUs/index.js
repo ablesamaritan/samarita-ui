@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import history from "../../history";
+// import history from "../../history";
 
 import "./styles.scss";
 class AboutUs extends React.Component {
