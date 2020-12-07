@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { ReactTypeformEmbed } from "react-typeform-embed";
 
 import "./styles.scss";
 
@@ -16,7 +17,8 @@ class NonMonetary extends React.Component {
               <p className="small-p">Address</p>
             </div>
             <h2 className="space-top">Please fill In the form below</h2>
-            <form>
+            <ReactTypeformEmbed url="https://ablesamaritan.typeform.com/to/wdTGNEXX" />
+            {/* <form>
               <div className="form-group">
                 <input
                   type="name"
@@ -58,7 +60,7 @@ class NonMonetary extends React.Component {
               >
                 Submit
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
       </Fragment>
