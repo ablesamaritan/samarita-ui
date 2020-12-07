@@ -1,0 +1,28 @@
+.padded-container {
+  padding: 5% 0;
+}
+
+.padded-header {
+  margin-bottom: 3%;
+}
+
+.padded-sub-header {
+  margin-bottom: 2%;
+}
+
+.icon-flex {
+	display: flex;
+	justify-content: center;
+}
+.avatar {
+	background-color: grey;
+	padding: 30px;
+	border-radius: 50%;
+}
+.center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+}

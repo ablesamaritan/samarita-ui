@@ -1,0 +1,41 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2em;
+}
+.card-item{
+  width: 350px;
+  padding: 5% 0%;
+}
+.padded-container {
+  padding: 5% 0;
+}
+.btn-donate {
+  background-color: #1034a6 !important;
+  color: white !important;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.avatar{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 959.95px) {
+  .card-grid {
+    grid-template-columns: auto;
+  }
+  .card-item{
+    width: 100%
+  }
+}

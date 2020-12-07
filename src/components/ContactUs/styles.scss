@@ -1,0 +1,31 @@
+.padded-container {
+  padding: 5% 0;
+}
+
+.padded-header {
+  margin-bottom: 3%;
+}
+
+.padded-sub-header {
+  margin-bottom: 2%;
+}
+
+.grid-display {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2em;
+}
+
+.btn-donate {
+  background-color: #1034a6 !important;
+  color: white !important;
+}
+
+@media (max-width: 959.95px) {
+  .grid-display {
+    grid-template-columns: auto;
+  }
+  .grid-item{
+    width: 100%
+  }
+}
