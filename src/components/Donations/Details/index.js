@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import { connect } from "react-redux";
-import { PayPalButtons } from "@paypal/react-paypal-js";
+// import { PayPalButtons } from "@paypal/react-paypal-js";
 
 import { getADonation, getDonations } from "../../../actions";
-import "./styles.scss"
+import "./styles.scss";
 
 class Details extends React.Component {
   state = { donation: {} };
@@ -38,13 +38,40 @@ class Details extends React.Component {
               <p className="card-text">
                 Target Amount: {donation && donation.target}
               </p> */}
-               <PayPalButtons style={{ layout: "horizontal" }} />
-               <div className="pay-card-container">
-                 <div className="pay-card-content">
-                   <div>Bank Account:</div>
-                   <div>0120172159397 (Edwin Mariita)</div>
-                 </div>
-               </div>
+              {/* <PayPalButtons style={{ layout: "horizontal" }} /> */}
+              <form
+                action="https://www.paypal.com/donate"
+                method="post"
+                target="_top"
+              >
+                <input
+                  type="hidden"
+                  name="hosted_button_id"
+                  value="D5DQUC6UR8PW4"
+                />
+                <input
+                  type="image"
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                  border="0"
+                  name="submit"
+                  title="PayPal - The safer, easier way to pay online!"
+                  alt="Donate with PayPal button"
+                />
+                <img
+                  alt=""
+                  border="0"
+                  src="https://www.paypal.com/en_KE/i/scr/pixel.gif"
+                  width="1"
+                  height="1"
+                />
+              </form>
+
+              <div className="pay-card-container">
+                <div className="pay-card-content">
+                  <div>Bank Account:</div>
+                  <div>0120172159397 (Edwin Mariita)</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -54,7 +81,7 @@ class Details extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(state)
+  console.log(state);
   return {
     donation: state.donations[ownProps.match.params.id],
   };
